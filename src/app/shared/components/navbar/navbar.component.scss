@@ -1,0 +1,22 @@
+.header{
+    .links{
+        display:flex;
+        a{
+            margin: 0 5px;
+            .mat-icon{
+                margin-right: 3px
+            }
+        }
+    }
+    img{
+      width:165px;
+      margin-top: 8px;
+    }
+  }
+  .mat-toolbar-row, .mat-toolbar-single-row {
+    height: 75px;
+  }
+  .price{
+  font-size: 24px;
+  font-weight: 500;
+}

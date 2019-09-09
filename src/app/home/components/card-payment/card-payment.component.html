@@ -1,0 +1,10 @@
+<mat-nav-list>
+    <h5>Select the card you wish to pay with</h5>
+        <a mat-list-item (click)="openLink(card)" *ngFor="let card of data.cards">
+          <div class="cardType">
+            <img width="40px" src="http://pngimg.com/uploads/visa/visa_PNG3.png" />
+          </div>
+          <span mat-line>{{card.cardNumberTransform}}</span>
+            <span mat-line>{{card.cardholderName}}</span>
+        </a>
+</mat-nav-list>

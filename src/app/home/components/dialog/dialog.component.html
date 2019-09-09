@@ -1,0 +1,12 @@
+<div class="transaction-success">
+  <h1 mat-dialog-title><mat-icon class="icon-done" aria-hidden="false" aria-label="done icon">done_all</mat-icon>  Succesful Transaction</h1>
+<div mat-dialog-content>
+  <p><span>Transaction ID:</span> {{data.transactionId}}</p>
+  <p class="status"><span>Status:</span> {{data.status}}</p>
+  <p><span>Description:</span> {{data.description}}</p>
+  <p class="total"><span>Transaction Total:</span> {{data.price}}</p>
+</div>
+<div mat-dialog-actions>
+  <button mat-button [mat-dialog-close]="data.transactionId" cdkFocusInitial>Ok</button>
+</div>
+</div>

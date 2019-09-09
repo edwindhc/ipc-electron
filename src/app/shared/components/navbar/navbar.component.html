@@ -1,0 +1,17 @@
+<div class="header">
+        <mat-grid-list cols="12">
+          <mat-toolbar color="primary">
+            <a (click)="payment('/home')" ><img src="http://ipcdigitalmedia.com/wp-content/uploads/2018/09/IPC_LOGO_WHITE3-copy.png" /></a>
+      <!--       <a " routerLinkActive="active">Crisis Center</a> -->
+            <!-- This fills the remaining space of the current row -->
+            <div class="links">
+                <a routerLink="/payments" *ngIf="this.authenticationService.currentUserValue" (click)="payment('/payments')" class="icon-with-text">
+                    <mat-icon aria-hidden="false" aria-label="Example home icon">payment</mat-icon> <span>Payments</span>
+                </a>
+                <a (click)="logout()" class="icon-with-text" *ngIf="this.authenticationService.currentUserValue">
+                    <mat-icon aria-hidden="false" aria-label="Example home icon">input</mat-icon> <span>Logout</span>
+                </a>
+            </div>
+          </mat-toolbar>
+        </mat-grid-list>
+      </div>
